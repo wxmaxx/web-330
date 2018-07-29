@@ -1,5 +1,5 @@
 # web-330
 Repository for WEB 330
 # Contributors
-Professor Krasso - Bellevue University
-Leon Maxwell - Bellevue University
+<p>Professor Krasso - Bellevue University</p>
+<p>Leon Maxwell - Bellevue University</p>
