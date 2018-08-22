@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Maxwell exercise 4.3</title>
+
+    <!-- jQuery reference -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <h2>HTTP DELETE Request</h2>
+    <button id="delete">Delete User</button>
+
+    <script>
+        $(function () {
+            $("#delete").click(function () {
+                $.ajax({
+                    url: "http://httpbin.org/delete",
+                    dataType: "json",
+                    type: "DELETE",
+                    data: {
+                        username: "billyjoejimbob",
+                        password: "password1",
+                        nickname: "goober"
+                    },
+                    success: function (data, status) {
+                        console.log("Username: " + data.form.username + "\nPassword: " + data.form.password + "\nNickname " + data.form.nickname + "\nStatus " + status);
+                    }
+                });
+            });
+        });
+    
+    </script>
+
+</body>
+
+</html>
